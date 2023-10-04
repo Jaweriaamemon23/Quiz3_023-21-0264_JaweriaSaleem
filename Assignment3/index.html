@@ -26,7 +26,14 @@ align-items: center;
 }
 </style>
 
-
+<script>function getData() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    
+    console.log("Username:", username);
+    console.log("Password:", password);
+    }
+</script>
 </head>
 <body>
     <div class="container">
@@ -64,17 +71,17 @@ align-items: center;
 <br>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-3 text-center image1-container">
+            <div class="col-lg-6 col-md-6 col-sm-3  image1-container">
                 <div class="form-container">
                     
                     <br>
                     <br>
                     <br>
                     <br>
-                    <h1>Sign up</h1>
+                    <h1 style="text-align: center;">Sign up</h1>
                     
                     <br>
-                    <p><b> Started Absolutely Free</b></p>
+                    <p style="text-align: center;"><b> Started Absolutely Free</b></p>
 
                     <form id="quizForm" class="mt-5">
                         <div class="mb-3 mx-4">
@@ -90,7 +97,8 @@ align-items: center;
                             <label class="form-check-label" for="cheating">I agree not to cheat on account ons. I understand that doing so violates our Terms of Service.</label>
                         </div>
                         <div class="d-grid gap-2">
-                        <button  type="submit" class="btn btn-primary mx-4 justify-content-center text-center my-4  ">Sign Up</button>
+                            <button type="submit" class="btn btn-primary mx-4 justify-content-center text-center my-4" onclick="getData()">Sign Up</button>
+
                     </div>
                     </form>
             </div>
